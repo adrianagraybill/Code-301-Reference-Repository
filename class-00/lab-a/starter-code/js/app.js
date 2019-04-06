@@ -30,14 +30,14 @@ function makeRandom() {
 
 function displayPics(){
   while(viewed.length < 6){
-    var rando = makeRandom();
+    const rando = makeRandom();
     while(!viewed.includes(rando)){
       viewed.push(rando);
+      console.log(rando);
     }
   }
-  console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `const to `const `.
-  // PUT YOUR RESPONSE IN THIS COMMENT
+  // It threw an error for let because the calling of the console log is out of scope. It threw an error for const because this is a changing value which const does not allow.
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
