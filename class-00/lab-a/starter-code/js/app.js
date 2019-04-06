@@ -30,7 +30,7 @@ function makeRandom() {
 
 function displayPics(){
   while(viewed.length < 6){
-    let rando = makeRandom();
+    var rando = makeRandom();
     while(!viewed.includes(rando)){
       viewed.push(rando);
     }
