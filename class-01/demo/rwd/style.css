@@ -1,0 +1,39 @@
+div {
+  height: 300px;
+  border: solid 2px black;
+  background: #888;
+  box-sizing: border-box; 
+}   
+
+@media (min-width: 481px) {
+  /* I can contain the divs */
+  section {
+    width: 768px;
+  }
+  
+  div {
+    background-color: blue;
+    
+  }
+}
+
+@media (min-width: 960px) {
+  /* I can contain the divs */
+  section {
+    width: 960px;
+    margin: 0px auto;
+  }
+
+ div {
+   
+  background-color: pink;
+}
+ }
+
+
+
+
+  
+  
+  
+}
