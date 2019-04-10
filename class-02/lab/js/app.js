@@ -34,11 +34,22 @@ Animal.readJson = () => {
         Animal.allAnimals.push(new Animal(item));
       });
     })
-    .then(Animal.loadAnimals);
+    .then(Animal.loadAnimals)
+    .then(Animal.loadKeyword);
 };
 
 Animal.loadAnimals = () => {
+  console.log('load animals');
   Animal.allAnimals.forEach(animal => animal.render());
 };
 
 $(() => Animal.readJson());
+
+Animal.loadKeyword = () => {
+  Animal.allAnimals.forEach(animal => {
+    console.log(animal);
+    $('select').append(`<option value="${animal.keyword}">${animal.keyword}</option>`);
+  });
+};
+
+// line 51 will be changed, we will make an array with the keywords and then iterate over them..
