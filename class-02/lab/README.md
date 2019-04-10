@@ -1,13 +1,15 @@
 
 Number and name of feature: Feature #1
-
 Estimate of time needed to complete: 1 hr
-
 Start time: 7:15pm
-
 Finish time: 8:26pm
-
 Actual time needed to complete: 1hr 11mins.
+
+Number and name of feature: Feature #2
+Estimate of time needed to complete: 1.5 hrs
+Start time: 8:40pm
+Finish time: 
+Actual time needed to complete: 
 
 
 - As a user, I want to view the images on the page so that I can browse the photo collection.
