@@ -190,9 +190,12 @@ Student.prototype.scopeArrow = () => console.log(this);
 console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
+
 // 1. What is "this" when joe.scope() is invoked?
-//undefined
+//"this" is ingrained into a constructor and does not hold a value. It's something that is used within the scope of the constructor. Otherwise you use the name of an object.property in order to access information within the object out of scope.
+
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//undefined
+//"this" is undefined because this has not been defined in the function, it is wanting to behave like a variable.
+
 // 3. Explain why "this" is different when an arrow function is used.
-//"this" is different when an arrow function is used because does not bind it's own this.
+//arrow functions need variables to be assigned or explained, "this" does not work because it is not in the scope of a constructor.
